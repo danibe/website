@@ -6,6 +6,7 @@
 	<title>Danibes Website</title>
 </head>
 <body>
+	<div id="animation"></div>
 	<div class="zentrierung titelgroesse">
 		<div class="roger"></div>
 		<img src="http://i.imgur.com/yQg2gUZ.jpg">
@@ -30,3 +31,13 @@
 	</div>
 </body>
 </html>
+<script>
+	for(var i = 0; i<100; i++){
+	    var left = Math.random()*document.body.clientWidth;
+		var tope = Math.random()*document.body.clientHeight;
+		var colors = ['rgb(236, 182, 102)', 'rgb(148, 32, 16)', 'rgb(245, 211, 33)']
+		oneColor = colors[Math.floor(Math.random()*3)];
+		var circle = '<div class="circle" style="background:' + oneColor + '; top:' + tope + 'px; left:' + left + 'px"></div>';
+		document.getElementById('animation').innerHTML += circle;
+	}
+</script>
