@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	font-family:georgia;
+}
+span {
+
+}
+.querbalke {
+	width: 100%;
+	height: 40px;
+	background: #980e23;
+}
+.spalte {
+width: 190px;
+float: left;
+padding: 5px;
+}
+.clear {
+	clear: both;
+	display: none;
+}
+.zentrierung {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 600px;
+}
+.titelgroesse {
+	width: 428px;
+}
+.titel {
+text-align: center;
+font-family: Palatino Linotype, Book Antiqua;
+font-weight: bold;
+font-size: 50px;
+}
+.mittlerespalte {
+	width: 200px;
+	float: left;
+}
+.titelquerbalkenabstand {
+	height: 5px;
+}
