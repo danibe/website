@@ -40,3 +40,12 @@ font-size: 50px;
 .titelquerbalkenabstand {
 	height: 5px;
 }
+.circle {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: -1;
+}
