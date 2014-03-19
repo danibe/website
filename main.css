@@ -1,51 +1,59 @@
-body {
-	margin: 0;
-	font-family:georgia;
-}
-span {
-
-}
-.querbalke {
-	width: 100%;
-	height: 40px;
-	background: #980e23;
-}
-.spalte {
-width: 190px;
-float: left;
-padding: 5px;
-}
-.clear {
-	clear: both;
-	display: none;
-}
-.zentrierung {
-	overflow: hidden;
-	margin: 0 auto;
-	width: 600px;
-}
-.titelgroesse {
-	width: 428px;
-}
-.titel {
-text-align: center;
-font-family: Palatino Linotype, Book Antiqua;
-font-weight: bold;
-font-size: 50px;
-}
-.mittlerespalte {
-	width: 200px;
-	float: left;
-}
-.titelquerbalkenabstand {
-	height: 5px;
-}
-.circle {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	-webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    z-index: -1;
-}
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Danibes Website</title>
+</head>
+<body>
+	<div id="animation"></div>
+	<div class="zentrierung titelgroesse">
+		<div class="roger"></div>
+		<img src="http://i.imgur.com/yQg2gUZ.jpg">
+	</div>
+	<div class="titelquerbalkenabstand"></div>
+	<div class="querbalke"></div>
+	<div class="zentrierung">
+		<div class="spalte"> 
+		<div class="titelschrift">
+			<h1>Arbeitsjournal</h1> 
+		</div>
+		<div class="datenschrift">
+			17.3: 
+		</div>
+			Mein erster Schnuppertag als Mediamatikerin hat begonnen. Als erste Aufgabe musste ich die Bedeutung verschiedener Wörter, die einem häufig in den Weg kommen, mithilfe des Googles herausfinden und aufschreiben. Im weiteren skizzierte ich das Aussehen meines Logos und erstellte es anschliessend im Illustrator. Dabei lernte ich das Programm immer besser kennen, was mir grosse freude bereitete.. Fast das selbe geschah mit dieser Website. Nach vielen verschiedenen Skizzen auf einem Blatt Papier wechselte ich in den Photoshop und gestalltete ein Wirefram (Prototyp meiner zukünftigen Website) zu einer der vorherigen Ideen. 
+		<div class="datenschrift">
+			18.3:
+		</div> 
+			Nach einem kreativen Tag wechselt es zu einem programmier Tag. 
+		</div>
+		<div class="zentrierung mittlerespalte">
+			<img class="spalte" src="http://news.techgenie.com/files/Mac-computer.png" width="200px">
+			<img class="spalte" src="http://www.dphotographer.co.uk/users/6236/thm1024/tiger16jpg.jpg" width="200px">
+		<div class="spalte2">
+			<img class="spalte" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlXkGnrkxKYDr6Pa0ZLrP9YVWhNXv5ZCFjGS2Tls1-zNFC3WsE" sidth="200px">
+		</div>
+		</div>
+		<div class="spalte">  Zuerst repetierte ich die Programmiersprache und startete danach einen Onlinekurs übers JavaScript in Englisch. So, und jetzt kommt das programmieren meiner eigenen Website anhand dem Erlernten und zusätzlicher Hilfe eines Lehrlings. Am Ende des Tages war mein Kopf voll mit spannenden und neuen Informationen über die ganze Programmierung, die ich mit Freude lernte.	
+		<div class="datenschrift">
+			19.3: 
+		</div>
+			Der dritte und leider auch schon der letzte Tag. Heute habe ich meine Website nochmals nachgeprüft und eventuelle Vernänderungen gemacht. Im weiteren schrieb ich mein Arbeitsjournal zu ende. Diese spannenden drei Tage bereiteten mir sehr viel Freude und ich konnte schon richtig in den Berufsaltag eines Mediamatikers eintauchen. </div>
+		<div class="clear"></div>
+	</div>
+	<div class="querbalke"></div>
+	<div class="zentrierung">
+		<div class="titel">My first working days</div>
+	</div>
+</body>
+</html>
+<script>
+	for(var i = 0; i<100; i++){
+	    var left = Math.random()*document.body.clientWidth;
+		var tope = Math.random()*document.body.clientHeight;
+		var colors = ['rgb(236, 182, 102)', 'rgb(148, 32, 16)', 'rgb(140, 140, 139)']
+		oneColor = colors[Math.floor(Math.random()*3)];
+		var circle = '<div class="circle" style="background:' + oneColor + '; top:' + tope + 'px; left:' + left + 'px"></div>';
+		document.getElementById('animation').innerHTML += circle;
+	}
+</script>
